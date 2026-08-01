@@ -1,0 +1,9 @@
+zone "beesafe.co" IN {
+		type master;
+		file "/etc/bind/db.beesafe.co";
+};
+
+zone "0.0.10.in-addr.arpa" IN {
+		type master;
+		file"etc/bind/db.0.0.10.in-addr";
+};

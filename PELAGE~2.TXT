@@ -1,0 +1,13 @@
+$TTL 		10800
+$ORIGIN		beesafe.co.
+@		IN	SOA	dns-server.beesafe.co. root.dns-server.beesafe.co. (
+				2024090700 ; Serial
+				3h ; Refresh
+				1h ; Retry
+				1w ; Expire
+				1h) ; Negative Cache TTL
+;
+@		IN	NS	dns.server.beesafe.co.
+dns-server	IN	A	10.0.0.11
+11		IN	PTR	dns-server.beesafe.co.
+12		IN	PTR	www.beesafe.co.

@@ -1,0 +1,5 @@
+--creation utilisateur
+CREATE USER IF NOT EXISTS 'beesafe_user'@'10.0.0.12' IDENTIFIED BY 'projet';
+--CRUD utilisateur
+GRANT CREATE, INSERT, SELECT, UPDATE ON beesafedb.* TO 'beesafe_user'@'10.0.0.12' IDENTIFIED BY 'projet';
+

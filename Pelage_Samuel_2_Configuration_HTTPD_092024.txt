@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+	ServerName www.beesafe.co
+	ServerAlias beesafe.co
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html/www.beesafe.co
+	
+	Errorlog ${APACHE_LOG_DIR}/www.beesafe.co-error.log
+	CustomLog ${APACHE_LOG_DIR}/www.beesafe.co-access.log combined
+	
+	<Directory /var/www/html/www.beesafe.co>
+		Options All
+		AllowOverride None
+	</Directory>
+</VirtualHost>
